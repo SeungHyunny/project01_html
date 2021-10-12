@@ -1,0 +1,61 @@
+@charset UTF-8;
+
+header{
+	width 100%;
+	height 95px;
+	background-color black;
+	position relative
+}
+
+#logo{
+	margin-left40px;
+	color white;
+	position absolute;
+}
+
+#top_menu{
+	position absolute;
+	top 20px;
+	right 20px;
+	color white;
+	font-size 14px;
+}
+
+#top_menu a{color white;}
+
+
+nav{
+	position absolute;
+	bottom 10px;
+	left 630px;
+	font-size 16px;
+}
+
+nav li{
+	display inline;
+	margin-left 30px;
+}
+nav li a{color white;}
+
+#content li{
+	display inline;
+	margin-left 50px;
+}
+
+#sec{
+	margin-top70px;
+	margin-left20px;
+	margin-right20px;
+	
+}
+
+footer{
+	position absolute;
+	width 100%;
+	height 60px;
+	bottom 0;
+	margin-top 20px;
+	text-align center;
+	color white;
+	background-color black;
+}

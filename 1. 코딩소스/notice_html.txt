@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>homepage</title>
+	<!-- 외부 css적용 -->
+	<link rel="stylesheet" href="homepage.css">
+	
+	<!-- 테이블 -->
+	<style type="text/css">
+	.line{border-bottom:1px solid black;}
+	</style>
+</head>
+<body>
+		<header>
+			<div id="logo" style="color:white;">
+				<h1><a href="home.html">SHAAAA</a></h1>
+			</div>
+			<div id="top_menu">
+				<a href="home.html">HOME</a> |
+				<a href="notice.html">NOTICE</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">outer</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">dress</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">top</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">pants</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">blouse</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">skirt</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">acc</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- 본문 -->
+		<div style="margin-top:100px;">
+			 <h2 align="center">공지사항</h2>
+			 <p/>
+			 	<table border="0" style="width:500px; height:250px;" align="center">
+			 		<tr align="center">
+			 			<th class="line"> No.1 </th>
+			 			<td> 로그인 방법 </td>
+			 			<td align="left"> 작성날짜 : 2021-05-11 </td>
+			 		</tr>
+			 		<tr align="center">
+			 			<th class="line"> No.2 </th>
+			 			<td> 회원가입 방법 </td>
+			 			<td align="left"> 작성날짜 : 2021-05-11 </td>
+			 		</tr>
+			 		<tr align="center">
+			 			<th class="line"> No.3 </th>
+			 			<td> 홈페이지 이용방법 </td>
+			 			<td align="left"> 작성날짜 : 2021-05-11 </td>
+			 		</tr>
+			 		<tr align="center">
+			 			<th class="line"> No.4 </th>
+			 			<td>  </td>
+			 			<td align="left"></td>
+			 		</tr>
+			 		<tr align="center">
+			 			<th class="line"> No.5 </th>
+			 			<td>  </td>
+			 			<td align="left"></td>
+			 		</tr>
+			 		<tr align="center">
+			 			<th class="line"> No.6 </th>
+			 			<td>  </td>
+			 			<td align="left"> </td>
+			 		</tr>
+			 	</table>
+		</div>
+		
+		<!-- 사이트 정보 -->
+		<footer>
+			<div>
+				<small>
+					<span> 주소 : 대전 중구 중앙로 000번길 00 </span> <span> 대표 : 김승현 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : tmdgus10285@naver.com </span>
+				</small>
+			</div>
+		</footer>
+</body>
+</html>

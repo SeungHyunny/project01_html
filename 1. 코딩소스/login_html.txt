@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>homepage</title>
+	<!-- 외부 css적용 -->
+	<link rel="stylesheet" href="homepage.css">
+		
+	<!-- 스타일적용 -->	
+	<style>
+		fieldset{
+			margin: 100px 700px;
+		}
+		fieldset legend{
+			font-weight: bold;
+			font-size: 20px
+		}
+	</style>
+</head>
+<body>
+		<header>
+			<div id="logo">
+				<h1><a href="home.html">SHAAAA</a></h1>
+			</div>
+			<div id="top_menu">
+				<a href="home.html">HOME</a> |
+				<a href="notice.html">NOTICE</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">outer</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">dress</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">top</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">pants</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">blouse</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">skirt</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">acc</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- 로그인 -->
+		<div style="margin-top:100px;">
+			<h2 align="center">login</h2>
+			<form action="login.jsp" method="post">
+				<h5 align="center">
+					<p>&nbsp;&nbsp; id : <input type="text" name="id" placeholder="id" style="width:140px" required></p>
+					<p>pwd : <input type="password" name="psw" placeholder="password" style="width:140px" required></p>
+					<button type="button" onclick="alert('로그인 되었습니다'); location.href='home.html'">login</button>
+				</h5>
+			</form>
+		</div>
+	
+		<!-- 사이트 정보 -->
+		<footer>
+			<div>
+				<small>
+					<span> 주소 : 대전 중구 중앙로 000번길 00 </span> <span> 대표 : 김승현 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : tmdgus10285@naver.com </span>
+				</small>
+			</div>
+		</footer>
+</body>
+</html>

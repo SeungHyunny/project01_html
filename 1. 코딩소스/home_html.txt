@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>SHAAAA</title>
+	<!-- 외부 css적용 -->
+	<link rel="stylesheet" href="homepage.css">
+	
+	<!-- 애니메이션 적용 -->
+		<script>
+					var index=0;
+					window.onload=function(){
+						slideShow();
+					}
+					
+					function slideShow(){
+						var i;
+						var x = document.getElementsByClassName("slide1");
+						for(i=0; i<x.length; i++){
+							x[i].style.display="none";
+						}
+						index++;
+						if(index>x.length){
+							index=1;
+						}
+						x[index-1].style.display="block";
+						setTimeout(slideShow,4000);
+					}
+		</script>
+	<!--본문 사진 제이쿼리 적용-->
+	<script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".sch").click(function(){
+				$(".sch").animate({
+					width: '500px',
+					height: '30px'
+				});
+			});
+			$(".but").click(function(){
+				$(".sch").animate({
+					width: '300px',
+					height: '30px'
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+		<header>
+			<div id="logo" style="color:white;">
+				<h1><a href="home.html">SHAAAA</a></h1>
+			</div>
+			<div id="top_menu">
+				<a href="home.html">HOME</a> |
+				<a href="notice.html">NOTICE</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">outer</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">dress</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">top</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">pants</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">blouse</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">skirt</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">acc</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- 검색창 -->
+		<form>
+				<h4 align="right" style="padding-right:35px; padding-bottom:10px;">
+					<input type="search" name="homesearch" class="sch" style="width:300px;height:30px;" placeholder="검색어를 입력하세요.">
+					<button type="button" class="but" style="border:0;width:50px;height:30px;" onclick="alert('검색중입니다.')">검색</button>
+				</h4>
+		</form>
+		
+		<!-- 본문 -->
+		<section>
+			<div class="img" style="margin-left: 40px;">
+			<div style="float: left; margin-right:110px;">
+				<table>
+					<tr>
+						<td><img src="사진1.jpg" height=300px alt="image"></td>
+						<td><img src="사진2.jfif" height=300px width=280px alt="image"></td>
+					</tr>
+					<tr>
+						<td><img src="사진3.jpg" height=300px width=300px alt="image"></td>
+						<td><img src="사진4.jpg" height=300px width=280px alt="image"></td>
+					</tr>
+				</table>
+			</div>
+			<p/>
+			<div style="float: left; margin-right:110px;">
+				<img class="slide1" src="가방1.jpg" width=430px height=300px alt="image">
+				<img class="slide1" src="가방2.jpg" width=430px height=300px alt="image">
+				<img class="slide1" src="가방3.jpg" width=430px height=300px alt="image">
+			</div>
+			<div style="float: left;">
+				<table>
+					<tr>
+						<td><img src="악세1.png" height=300px alt="image"></td>
+						<td><img src="악세2.jpg" height=300px width=280px alt="image"></td>
+					</tr>
+					<tr>
+						<td><img src="악세3.jpg" height=300px width=300px alt="image"></td>
+						<td><img src="악세4.jpg" height=300px width=280px alt="image"></td>
+					</tr>
+				</table>
+			</div>
+			</div>
+		</section>
+		
+		<!-- 사이트 정보 -->
+		<footer>
+			<div>
+				<small>
+					<span> 주소 : 대전 중구 중앙로 000번길 00 </span> <span> 대표 : 김승현 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : tmdgus10285@naver.com </span>
+				</small>
+			</div>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>homepage</title>
+	<!-- 외부 css적용 -->
+	<link rel="stylesheet" href="homepage.css">
+	
+	<style>
+		fieldset{
+			margin: 30px 600px;
+		}
+		fieldset legend{
+			font-weight: bold;
+			font-size: 20px
+		}
+	</style>
+</head>
+<body>
+		<header>
+				<div id="logo">
+				<h1><a href="home.html">SHAAAA</a></h1>
+			</div>
+			<div id="top_menu">
+				<a href="home.html">HOME</a> |
+				<a href="notice.html">NOTICE</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">outer</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">dress</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">top</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">pants</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">blouse</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">skirt</a></li>
+					&nbsp;&nbsp;
+					<li><a href="#">acc</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+	<form action="join.jsp" method="post">
+		<fieldset style="border:2; color:black;" width="100px;" height="150px;">
+			<legend>가입정보 입력</legend>
+			<p>이름: <input type="text" name="name"></p>
+			<p>생년월일: <input type="date" name="birthday"></p>
+			<p>id: <input type="email" name="id">(이메일 형식으로 작성해주세요.)</p>
+			<p>password: <input type="password" name="psw"></p>
+			<p>메일수신: <input type="radio" name="agree" value="yes" checked>동의
+						<input type="radio" name="agree" value="no">비동의
+			</p>
+			<p>핸드폰: <select name="phone_f">
+						<option value="1" selected>010</option>
+						<option value="2" >011</option>
+						<option value="3" >070</option>
+					</select>
+					-
+					<input type="text" name="phone_m" style="width:80px">
+					-
+					<input type="text" name="phone_e" style="width:80px">
+			</p>
+			<p>관심의류: <input type="checkbox" name="clothes" value="원피스">원피스
+				<input type="checkbox" name="clothes" value="자켓">자켓
+				<input type="checkbox" name="clothes" value="바지">바지
+				<input type="checkbox" name="clothes" value="셔츠">셔츠
+			</p>
+		</fieldset>
+		<div style="margin: 30px 600px;">
+			<input type="submit" value="가입하기">
+			<input type="reset" value="다시작성">
+		</div>
+	</form>
+		
+		<!-- 사이트 정보 -->
+		<footer>
+			<div>
+				<small>
+					<span> 주소 : 대전 중구 중앙로 000번길 00 </span> <span> 대표 : 김승현 </span> <span> tel : 042-000-0000 </span>
+					<br/>
+					<span> fax : 00-000-0000 </span> <span> email : tmdgus10285@naver.com </span>
+				</small>
+			</div>
+		</footer>
+</body>
+</html>
